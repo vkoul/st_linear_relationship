@@ -16,12 +16,12 @@ st.title( "Price and Sales relationship :bar_chart:")
 st.markdown('-----')
 st.write(
 """
-In an organisation, sales is often inversely linked to price. If the price increases, the sales will drop. If we wish to predict sales using price, we have to come up with a mathematical relationship.
+In an organisation, units sold is often inversely linked to price. If the price increases, the units sold will drop. If we wish to predict units sold using price, we have to come up with a mathematical relationship.
 
 If we use a linear regression to find out this relationship, the mathematical formulae will mimick the line equation of the form $y= mx+c$, where $m$ is the slope and $c$ is a constant value.
 
 So the relationship between price and units sold will look like :    
-                       $Units = weights * price + constant$
+                       $Units = coefficient * price + constant$
 
 We will explore this relationship in a simple app. You can manipulate the value of weights and constants and see how the relationship value changes
 """
@@ -100,3 +100,5 @@ st.plotly_chart(combined_plot, use_container_width = True)
 # Change the color of the line plot
 # Add more info
 # Maybe make a 3-d chart with advertisment and promo values
+# add labels and legend to the chart
+
