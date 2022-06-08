@@ -16,9 +16,9 @@ st.title( "Price and Sales relationship :bar_chart:")
 st.markdown('-----')
 st.write(
 """
-In an organisation, units sold is often inversely linked to price. If the price increases, the units sold will drop. If we wish to predict units sold using price, we have to come up with a mathematical relationship.
+In an organisation, units sold is often inversely linked to price. As the price increases, the units sold will drop. If we wish to predict units sold using price, we have to come up with a mathematical relationship.
 
-If we use a linear regression to find out this relationship, the mathematical formulae will mimick the line equation of the form $y= mx+c$, where $m$ is the slope and $c$ is a constant value.
+If we use a **linear regression** to find out this relationship, the mathematical formulae will mimick the line equation of the form $y= mx+c$, where $m$ is the slope and $c$ is a constant value.
 
 So the relationship between price and units sold will look like :    
                        $Units = coefficient * price + constant$
@@ -61,14 +61,14 @@ units_sold = [73959,71544,78587,80364,78771,71986,74885,73345,76659,71880,73598,
 st.sidebar.header("Please use the slider to change the values")
 
 # variables
-weights = st.sidebar.slider('What is the coefficient of the price', min_value = -15000, max_value = 0, step = 1000, value = -3000)
-constant = st.sidebar.slider('What is the constant value', min_value = 60000, max_value = 100000, step = 1500, value = 100000)
+weights = st.sidebar.slider('Set the  coefficient of the price', min_value = -15000, max_value = 0, step = 1000, value = -3000)
+constant = st.sidebar.slider('Set the constant value', min_value = 60000, max_value = 100000, step = 1500, value = 100000)
 
 # predictions
 predicted_units = compute_model_output(price, weights, constant)
 
 # equation
-st.write('The new equation is: $Units$ = ', weights, '$ * \,price\, + $', constant)
+st.write('The equation is: $Units$ = ', weights, '$ * \,price\, + $', constant)
 
 
 ## Visualizations
