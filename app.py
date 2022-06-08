@@ -18,12 +18,12 @@ st.write(
 """
 In an organisation, units sold is often inversely linked to price. As the price increases, the units sold will drop. If we wish to predict units sold using price, we have to come up with a mathematical relationship.
 
-If we use a **linear regression** to find out this relationship, the mathematical formulae will mimick the line equation of the form $y= mx+c$, where $m$ is the slope and $c$ is a constant value.
+If we use a **linear regression** to find out this relationship, the mathematical formulae will mimick the line equation of the form $y= mx+c$, where $m$ is the **slope** and $c$ is a **constant** value.
 
 So the relationship between price and units sold will look like :    
                        $Units = coefficient * price + constant$
 
-We will explore this relationship in a simple app. You can manipulate the value of weights and constants and see how the relationship value changes
+We will explore this relationship in a simple app. You can manipulate the value of weights and constants and see how the values in the equation change along with the change in the chart
 """
 )
 
