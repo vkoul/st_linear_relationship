@@ -59,18 +59,17 @@ units_sold = [73959,71544,78587,80364,78771,71986,74885,73345,76659,71880,73598,
 
 # sliders
 st.sidebar.header("Please use the slider to change the values")
+
+# variables
 weights = st.sidebar.slider('What is the coefficient of the price', min_value = -15000, max_value = 0, step = 1000, value = -3000)
 constant = st.sidebar.slider('What is the constant value', min_value = 60000, max_value = 100000, step = 1500, value = 100000)
 
-
-# equation
-st.latex(r'''
-
-
-''')
-
 # predictions
 predicted_units = compute_model_output(price, weights, constant)
+
+# equation
+print(" {} units = {} * price + {} ".format(predicted_units, weights, constant))
+
 
 ## Visualizations
 
