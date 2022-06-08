@@ -68,7 +68,7 @@ constant = st.sidebar.slider('What is the constant value', min_value = 60000, ma
 predicted_units = compute_model_output(price, weights, constant)
 
 # equation
-st.write('The new equation is: $Units$ = ', weights, '*', 'price +', constant)
+st.write('The new equation is: $Units$ = ', weights, '$* price +$', constant)
 
 
 ## Visualizations
