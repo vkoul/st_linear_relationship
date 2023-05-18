@@ -1,5 +1,5 @@
 
-# [App Link](https://share.streamlit.io/vkoul/st_linear_relationship/main/app.py)
+# 📦 [App Link](https://linear-relationship-check.streamlit.app/)
 
 Streamlit app to show how the line value changes, with change in constant value and coefficient value. 
 
